@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Approval') {
       steps {
-        input 'Vocâ aprova para deploy?'
+        input 'Voce aprova para deploy?'
       }
     }
     stage('Deploy') {
