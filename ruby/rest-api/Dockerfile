@@ -1,3 +1,3 @@
 FROM mateusprado/sinatra-alpine
-
-COPY . $APP_PATH
+ADD ruby/ .
+CMD bundle install
