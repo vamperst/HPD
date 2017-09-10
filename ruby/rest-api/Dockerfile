@@ -1,3 +1,3 @@
 FROM mateusprado/sinatra-alpine
-ADD . .
+ADD ruby/rest-api .
 CMD bundle install
