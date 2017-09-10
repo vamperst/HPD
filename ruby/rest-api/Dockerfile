@@ -1,3 +1,3 @@
 FROM mateusprado/sinatra-alpine
-ADD ruby/ .
+ADD . .
 CMD bundle install
