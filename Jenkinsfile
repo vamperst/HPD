@@ -25,7 +25,7 @@ pipeline {
     stage('Finalizando') {
       steps {
         sh 'echo "fazendo finalizando"'
-        sh 'docker run -ti -p 4567:4567 test-docker-jenkins ruby rest-api/application.rb'
+        sh 'docker run -d -p 4567:4567 test-docker-jenkins ruby rest-api/application.rb'
       }
     }
   }
