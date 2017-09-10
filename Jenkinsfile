@@ -21,5 +21,10 @@ pipeline {
         sh 'echo "fazendo deploy"'
       }
     }
+    stage('Finalizando') {
+      steps {
+        sh 'echo "fazendo finalizando"'
+      }
+    }
   }
 }
