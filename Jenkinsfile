@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'ubuntu:16.04'
+      args '/bin/bash'
+    }
+    
+  }
   stages {
     stage('Build') {
       steps {
